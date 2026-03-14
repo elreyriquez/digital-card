@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaquille Comrie - Creative Strategist</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap');
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    html {
+      color-scheme: dark;
+    }
+    
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: #0d0d0d !important;
+      color: #ffffff !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      min-height: 100vh;
+      padding: 48px 56px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    @media print {
+      body {
+        padding: 40px;
+        background: #0d0d0d !important;
+        color: #ffffff !important;
+      }
+      .link-card {
+        background: #1a1a1a !important;
+        border-color: #404040;
+      }
+      .link-url { color: #7eb8ff; }
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #404040;
+      flex-wrap: wrap;
+    }
+    
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #404040;
+      flex-shrink: 0;
+    }
+    
+    .header-text {
+      flex: 1;
+      min-width: 200px;
+    }
+    
+    h1 {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    
+    .role {
+      font-size: 20px;
+      font-weight: 600;
+      color: #e8e8e8;
+      letter-spacing: 0.02em;
+    }
+    
+    .tagline {
+      font-size: 17px;
+      color: #d0d0d0;
+      margin-top: 12px;
+      font-style: italic;
+    }
+    
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #d0d0d0;
+      margin-bottom: 24px;
+    }
+    
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    
+    .link-card {
+      padding: 20px 24px;
+      border: 1px solid #404040;
+      border-radius: 8px;
+      background: #1a1a1a;
+      transition: border-color 0.2s;
+    }
+    
+    .link-card:hover {
+      border-color: #6ea8fe;
+    }
+    
+    .link-card.resume-card {
+      background: linear-gradient(135deg, #1a2533 0%, #1a1a1a 100%);
+      border-color: #3d5a80;
+    }
+    
+    .link-card.resume-card:hover {
+      border-color: #7eb8ff;
+    }
+    
+    .link-title {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    
+    .link-url {
+      font-size: 15px;
+      color: #7eb8ff;
+      word-break: break-all;
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .link-url:hover {
+      text-decoration: underline;
+      color: #a8d4ff;
+    }
+    
+    .link-desc {
+      font-size: 16px;
+      color: #e0e0e0;
+      margin-top: 8px;
+    }
+    
+    .download-icon::after {
+      content: " ↓";
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #404040;
+      font-size: 15px;
+      color: #d0d0d0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="profile.png" alt="Shaquille Comrie" class="profile-img">
+    <div class="header-text">
+      <h1>Shaquille Comrie</h1>
+      <p class="role">Creative Strategist</p>
+    </div>
+  </div>
+  
+  <h2>Quick Links</h2>
+  
+  <div class="links">
+    <div class="link-card resume-card">
+      <div class="link-title">Resume</div>
+      <a href="resume.pdf" class="link-url download-icon" target="_blank" download>Download Resume (PDF)</a>
+      <div class="link-desc">Professional experience, skills & background</div>
+    </div>
+    
+    <div class="link-card">
+      <div class="link-title">Full Portfolio</div>
+      <a href="https://elreyriquez.github.io/Portfolio/index.html" class="link-url" target="_blank">https://elreyriquez.github.io/Portfolio/index.html</a>
+      <div class="link-desc">Graphic design, video production, UI/UX & collaborative projects</div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    Thanks for connecting! Feel free to reach out — let's build something great together.
+  </div>
+</body>
+</html>
