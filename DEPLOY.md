@@ -2,13 +2,22 @@
 
 ## Before you deploy
 
-**Add your resume:** Place your resume PDF in this folder and name it `resume.pdf`. The download link in your card will point to it automatically.
+**Resumes (hosted with the card):** Keep these PDFs in the repo root next to `index.html` so links stay valid when you print/share the card as a PDF:
+
+- `shaquille-comrie-ui-ux-resume.pdf` — UI/UX resume  
+- `shaquille-comrie-resume.pdf` — general resume  
+
+After you push, they are served at  
+`https://elreyriquez.github.io/digital-card/shaquille-comrie-ui-ux-resume.pdf` and  
+`https://elreyriquez.github.io/digital-card/shaquille-comrie-resume.pdf`  
+so anyone opening a saved PDF of the card can open the same URLs in a browser.
 
 ```
 digital-card/
 ├── index.html
 ├── profile.png
-├── resume.pdf    ← Add your resume here (rename if needed)
+├── shaquille-comrie-ui-ux-resume.pdf
+├── shaquille-comrie-resume.pdf
 └── DEPLOY.md
 ```
 
