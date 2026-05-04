@@ -7,10 +7,19 @@
 - `shaquille-comrie-ui-ux-resume.pdf` — UI/UX resume  
 - `shaquille-comrie-resume.pdf` — general resume  
 
-After you push, they are served at  
-`https://elreyriquez.github.io/digital-card/shaquille-comrie-ui-ux-resume.pdf` and  
-`https://elreyriquez.github.io/digital-card/shaquille-comrie-resume.pdf`  
-so anyone opening a saved PDF of the card can open the same URLs in a browser.
+After you push, they are served at (GitHub default or custom domain):
+
+- `https://card.secfreelance.com/shaquille-comrie-ui-ux-resume.pdf`  
+- `https://card.secfreelance.com/shaquille-comrie-resume.pdf`  
+
+(fallback: `https://elreyriquez.github.io/digital-card/…`)
+
+## Custom domain (`card.secfreelance.com`)
+
+1. **Namecheap → Advanced DNS:** **CNAME** · Host **`card`** → **`elreyriquez.github.io`**
+2. **GitHub → repo → Settings → Pages:** **Custom domain:** `card.secfreelance.com` (matches the **`CNAME`** file in this repo). Enable **Enforce HTTPS** when ready.
+
+The repo root **`CNAME`** file must contain exactly: `card.secfreelance.com`
 
 ```
 digital-card/
